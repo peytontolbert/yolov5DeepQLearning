@@ -1,0 +1,45 @@
+python train.py --img 640 --batch 30 --epochs 50 --data data/mw2.yaml --cfg models/yolov5s.yaml --weights yolov5s.pt --name mw2_modelimproved
+
+
+python detect.py --weights runs/train/mw2_model/weights/best.pt --img 640 --conf 0.25 --source path/to/your/test_images_or_videos
+
+python play.py
+
+
+cv2 (OpenCV): This is used for image processing tasks. You can install it with pip install opencv-python.
+
+gc: This is part of the Python standard library and doesn't need to be installed separately.
+
+pyautogui: Used for programmatically controlling the mouse and keyboard. Install with pip install pyautogui.
+
+numpy: A library for numerical computations in Python. Install with pip install numpy.
+
+os, json, time, sys, ctypes: These are all part of the Python standard library and don't need to be installed separately.
+
+mss: Used for taking screenshots. Install with pip install mss.
+
+pygetwindow: Used to interact with native windows. Install with pip install pygetwindow.
+
+win32api, win32con: These are part of the pywin32 package, which provides access to Windows APIs. Install with pip install pywin32.
+
+torch: This is PyTorch, a library for machine learning. Install with pip install torch.
+
+PySimpleGUI: Used for creating simple GUIs. Install with pip install PySimpleGUI.
+
+keyboard: Used for controlling and monitoring the keyboard. Install with pip install keyboard.
+
+random, collections, math, pickle: These are part of the Python standard library and don't need to be installed separately.
+
+aimbot_agent: This appears to be a custom module and cannot be installed via pip.
+
+gym: Used for creating and managing reinforcement learning environments. Install with pip install gym.
+
+mouse: Used for controlling and monitoring the mouse. Install with pip install mouse.
+
+PIL (Pillow): This is a fork of the Python Imaging Library (PIL). Install with pip install pillow.
+
+models.experimental, models.yolo, utils.torch_utils: These appear to be custom modules and cannot be installed via pip.
+
+serial: Used for serial communication, which is often used for interacting with hardware devices. Install with pip install pyserial.
+
+Note: Some of these libraries have dependencies that may need to be installed separately, such as OpenCV, which depends on numpy. If you're using an IDE like PyCharm, it can often handle these dependencies for you.
